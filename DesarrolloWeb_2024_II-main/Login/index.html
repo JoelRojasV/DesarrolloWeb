@@ -7,29 +7,52 @@
 </head>
 <body>
     <h1>Formularios</h1>
+
     <form action="#" id="formulario">
-        <label for="nombre">Nombre(s): </label>
-        <input type="text" name="nombre" id="nombre"><br>
-        <label for="apePat">Apellido Paterno: </label>
-        <input type="text" name="apePat" id="apePat"><br>
-        <label for="apeMat">Apellido Materno: </label>
-        <input type="text" name="apeMat" id="apeMat"><br>
-        <label for="pass">Genero: </label>
-        <input type="radio" name="genero" id="genero-masculino" value="Masculino">Masculino
-        <input type="radio" name="genero" id="genero-femenino" value="Femenino">Femenino
-        <input type="radio" name="genero" id="genero-otro" value="Otro">Otro <br>
-        <label for="">Lenguajes de Programación:</label>
-        <input type="checkbox" name="lenguajes" id="HTML" value="HTML">
-        <label for="">HTML</label>
-        <input type="checkbox" name="lenguajes" id="CSS" value="CSS">
-        <label for="">CSS</label>
-        <input type="checkbox" name="lenguajes" id="Java" value="Java">
-        <label for="">Java</label>
-        <input type="checkbox" name="lenguajes" id="Python" value="Python">
-        <label for="">Python</label> <br>
-        <label for="">Sugerencias:</label><br>
-        <textarea id="sugerencia" name="sugerencia" cols="30" rows="10"></textarea><br>
-        <input type="submit" value="ENVIAR">
+        <fieldset>
+            <legend>Indica el nombre de la persona</legend>
+            <label for="nombre">Nombre(s): </label>
+            <input type="text" name="nombre" id="nombre"><br>
+            <label for="apePat">Apellido Paterno: </label>
+            <input type="text" name="apePat" id="apePat"><br>
+            <label for="apeMat">Apellido Materno: </label>
+            <input type="text" name="apeMat" id="apeMat"><br>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Se indica el género de la persona</legend>
+            <label for="pass">Genero: </label>
+            <input type="radio" name="genero" id="genero-masculino" value="Masculino">Masculino
+            <input type="radio" name="genero" id="genero-femenino" value="Femenino">Femenino
+            <input type="radio" name="genero" id="genero-otro" value="Otro">Otro <br>
+        </fieldset>
+    
+        <fieldset>
+            <label for="">Lenguajes de Programación:</label>
+            <input type="checkbox" name="lenguajes" id="JavaScript" value="JavaScript">
+            <label for="">JavaScript</label>
+            <input type="checkbox" name="lenguajes" id="C" value="C">
+            <label for="">C</label>
+            <input type="checkbox" name="lenguajes" id="Java" value="Java">
+            <label for="">Java</label>
+            <input type="checkbox" name="lenguajes" id="Python" value="Python">
+            <label for="">Python</label> <br>
+        </fieldset>
+        
+        <fieldset>
+            <label for="">Selecciona el País: </label>
+            <select name="pais" id="pais">
+                <option value="México">México</option>
+                <option value="Estados Unidos">Estados Unidos</option>
+                <option value="Canadá">Canadá</option>
+            </select><br>
+        </fieldset>
+    
+        <fieldset>
+            <label for="">Sugerencias:</label><br>
+            <textarea id="sugerencia" name="sugerencia" cols="30" rows="10"></textarea><br>
+            <input type="submit" value="ENVIAR">
+        </fieldset>
     </form>
     <div id="respuesta"></div>
     <script src="script.js"></script>
