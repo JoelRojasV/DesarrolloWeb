@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model (DOM)</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form action="#" id="formulario">
+        <label for="nombre">Nombre(s): </label>
+        <input type="text" name="nombre" id="nombre"><br>
+        <label for="apePat">Apellido Paterno: </label>
+        <input type="text" name="apePat" id="apePat"><br>
+        <label for="apeMat">Apellido Materno: </label>
+        <input type="text" name="apeMat" id="apeMat"><br>
+        <label for="pass">Genero: </label>
+        <input type="radio" name="genero" id="genero-masculino" value="Masculino">Masculino
+        <input type="radio" name="genero" id="genero-femenino" value="Femenino">Femenino
+        <input type="radio" name="genero" id="genero-otro" value="Otro">Otro <br>
+        <label for="">Lenguajes de Programación:</label>
+        <input type="checkbox" name="lenguajes" id="HTML" value="HTML">
+        <label for="">HTML</label>
+        <input type="checkbox" name="lenguajes" id="CSS" value="CSS">
+        <label for="">CSS</label>
+        <input type="checkbox" name="lenguajes" id="Java" value="Java">
+        <label for="">Java</label>
+        <input type="checkbox" name="lenguajes" id="Python" value="Python">
+        <label for="">Python</label> <br>
+        <label for="">Sugerencias:</label><br>
+        <textarea id="sugerencia" name="sugerencia" cols="30" rows="10"></textarea><br>
+        <input type="submit" value="ENVIAR">
+    </form>
+    <div id="respuesta"></div>
+    <script src="script.js"></script>
+</body>
+</html>
